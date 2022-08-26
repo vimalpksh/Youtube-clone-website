@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>YouTube.com Clone</title>
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <style>
       p {
         font-family: Roboto, Arial;
         margin-top: 0;
         margin-bottom: 0;
       }
-
-      .thumbnail {
-        width: 300px;
-        display: block;
-      }
-
       .search-bar {
         display: block;
       }
-
+      .video-thumbail {
+        width: 100%;
+      }
       .video-title {
         margin-top: 0;
         font-size: 14px;
@@ -33,80 +30,313 @@
         line-height: 20px;
         margin-bottom: 12px;
       }
-
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
-
-      .channel-picture {
-        display: inline-block;
-        width: 50px;
-        vertical-align: top;
-      }
-
-      .video-info {
-        display: inline-block;
-        width: 200px;
-      }
-
-      .profile-picture {
+      .channel-pic {
         width: 40px;
         border-radius: 50px;
       }
-
-      .thumbnail-row {
+      .video-thumbail-ctn {
         margin-bottom: 12px;
       }
-
-      .video-author,
+      .video-channel,
       .video-stats {
         font-size: 12px;
         color: rgb(96, 96, 96);
       }
-
-      .video-author {
+      .video-channel {
         margin-bottom: 4px;
+      }
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
       }
     </style>
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search" />
+    <input class="search-bar" placeholder="Search" type="text" name="" id="" />
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="video-thumbail-ctn">
+          <img
+            class="video-thumbail"
+            src="thumbnails/thumbnail-1.webp"
+            alt="Image of MKBHD"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic-ctn">
+            <img
+              class="channel-pic"
+              src="channel-pictures/channel-1.jpeg"
+              alt="MKBHD display picture"
+            />
+          </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
-      </div>
-      <div>
-        <div class="channel-picture">
-          <img class="profile-picture" src="channel-pictures/channel-1.jpeg" />
-        </div>
-        <div class="video-info">
-          <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-          </p>
-          <p class="video-author">Marques Brownlee</p>
-          <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          <div class="video-data">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-channel">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
-      </div>
-      <div>
-        <div class="channel-picture">
-          <img class="profile-picture" src="channel-pictures/channel-2.jpeg" />
+      <!-- ===2=== next ====== -->
+      <div class="video-preview">
+        <div class="video-thumbail-ctn">
+          <img class="video-thumbail" src="thumbnails/thumbnail-2.webp" />
         </div>
-        <div class="video-info">
-          <p class="video-title">Try Not To Laugh Challenge #9</p>
-          <p class="video-author">Markiplier</p>
-          <p class="video-stats">19M views &#183; 4 years ago</p>
+        <div class="video-info-grid">
+          <div class="channel-pic-ctn">
+            <img class="channel-pic" src="channel-pictures/channel-2.jpeg" />
+          </div>
+
+          <div class="video-data">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-channel">Markiplier</p>
+            <p class="video-stats">19M views &#183; 4 years ago</p>
+          </div>
         </div>
       </div>
+      <!-- ====== next ====== -->
+
+      <!-- ===3=== next ====== -->
+      <div class="video-preview">
+        <div class="video-thumbail-ctn">
+          <img
+            class="video-thumbail"
+            src="thumbnails/thumbnail-3.webp"
+            alt="Image of MKBHD"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic-ctn">
+            <img
+              class="channel-pic"
+              src="channel-pictures/channel-3.jpeg"
+              alt="MKBHD display picture"
+            />
+          </div>
+
+          <div class="video-data">
+            <p class="video-title">
+              Crazy Tik Toks Taken Moments Before DISASTER
+            </p>
+            <p class="video-channel">SSSniperWolf</p>
+            <p class="video-stats">12M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- ====== next ====== -->
+
+      <!-- ===4=== next ====== -->
+      <div class="video-preview">
+        <div class="video-thumbail-ctn">
+          <img
+            class="video-thumbail"
+            src="thumbnails/thumbnail-4.webp"
+            alt="Image of MKBHD"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic-ctn">
+            <img
+              class="channel-pic"
+              src="channel-pictures/channel-4.jpeg"
+              alt="MKBHD display picture"
+            />
+          </div>
+
+          <div class="video-data">
+            <p class="video-title">
+              The Simplest Math Problem No One Can Solve - Collatz Conjecture
+            </p>
+            <p class="video-channel">Veritasium</p>
+            <p class="video-stats">18M views &#183; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- ====== next ====== -->
+
+      <!-- ====5== next ====== -->
+      <div class="video-preview">
+        <div class="video-thumbail-ctn">
+          <img
+            class="video-thumbail"
+            src="thumbnails/thumbnail-5.webp"
+            alt="Image of MKBHD"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic-ctn">
+            <img
+              class="channel-pic"
+              src="channel-pictures/channel-5.jpeg"
+              alt="MKBHD display picture"
+            />
+          </div>
+
+          <div class="video-data">
+            <p class="video-title">
+              Kadane's Algorithm to Maximum Sum Subarray Problem
+            </p>
+            <p class="video-channel">CS Dojo</p>
+            <p class="video-stats">519K views &#183; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- ====== next ====== -->
+
+      <!-- ===6=== next ====== -->
+      <div class="video-preview">
+        <div class="video-thumbail-ctn">
+          <img
+            class="video-thumbail"
+            src="thumbnails/thumbnail-6.webp"
+            alt="Image of MKBHD"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic-ctn">
+            <img
+              class="channel-pic"
+              src="channel-pictures/channel-6.jpeg"
+              alt="MKBHD display picture"
+            />
+          </div>
+
+          <div class="video-data">
+            <p class="video-title">
+              Anything You Can Fit In The Circle I’ll Pay For
+            </p>
+            <p class="video-channel">MrBeast</p>
+            <p class="video-stats">144M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- ====== next ====== -->
+
+      <!-- ===7=== next ====== -->
+      <div class="video-preview">
+        <div class="video-thumbail-ctn">
+          <img
+            class="video-thumbail"
+            src="thumbnails/thumbnail-1.webp"
+            alt="Image of MKBHD"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic-ctn">
+            <img
+              class="channel-pic"
+              src="channel-pictures/channel-1.jpeg"
+              alt="MKBHD display picture"
+            />
+          </div>
+
+          <div class="video-data">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-channel">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- ====== next ====== -->
+
+      <!-- ====8== next ====== -->
+      <div class="video-preview">
+        <div class="video-thumbail-ctn">
+          <img
+            class="video-thumbail"
+            src="thumbnails/thumbnail-1.webp"
+            alt="Image of MKBHD"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic-ctn">
+            <img
+              class="channel-pic"
+              src="channel-pictures/channel-1.jpeg"
+              alt="MKBHD display picture"
+            />
+          </div>
+
+          <div class="video-data">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-channel">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- ====== next ====== -->
+
+      <!-- ===9=== next ====== -->
+      <div class="video-preview">
+        <div class="video-thumbail-ctn">
+          <img
+            class="video-thumbail"
+            src="thumbnails/thumbnail-1.webp"
+            alt="Image of MKBHD"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic-ctn">
+            <img
+              class="channel-pic"
+              src="channel-pictures/channel-1.jpeg"
+              alt="MKBHD display picture"
+            />
+          </div>
+
+          <div class="video-data">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-channel">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- ====== next ====== -->
+
+      <!-- ===10=== next ====== -->
+      <div class="video-preview">
+        <div class="video-thumbail-ctn">
+          <img
+            class="video-thumbail"
+            src="thumbnails/thumbnail-1.webp"
+            alt="Image of MKBHD"
+          />
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pic-ctn">
+            <img
+              class="channel-pic"
+              src="channel-pictures/channel-1.jpeg"
+              alt="MKBHD display picture"
+            />
+          </div>
+
+          <div class="video-data">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-channel">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- ====== next ====== -->
     </div>
   </body>
 </html>
