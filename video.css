@@ -6,18 +6,19 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
 }
 .channel-pic {
-  width: 40px;
+  width: 36px;
   border-radius: 50px;
 }
 .video-thumbail-ctn {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  position: relative;
 }
 .video-channel,
 .video-stats {
@@ -32,4 +33,33 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+}
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  font-family: Roboto, arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+}
+.notification-icon-container {
+  position: relative;
+}
+.notification-count {
+  background-color: rgb(168, 3, 3);
+  color: white;
+  position: absolute;
+  right: -5px;
+  top: -2px;
+  font-family: Roboto, arial;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 10px;
 }

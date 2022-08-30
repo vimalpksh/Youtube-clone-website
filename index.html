@@ -26,6 +26,7 @@
         <input class="search-bar" placeholder="Search" type="text" />
         <button class="search-button">
           <img class="search-icon" src="icons/search.svg" alt="" />
+          <div class="tool-tip">Search</div>
         </button>
         <button class="voice-search-button">
           <img
@@ -33,21 +34,61 @@
             src="icons/voice-search-icon.svg"
             alt=""
           />
+          <div class="tool-tip">Search with your voice</div>
         </button>
       </div>
       <div class="right-section">
-        <img class="upload-icon" src="icons/upload.svg" alt="" />
-        <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="" />
-        <img class="notification-icon" src="icons/notifications.svg" alt="" />
-        <img
-          class="current-user-picture"
-          src="channel-pictures/my-channel.jpeg"
-          alt=""
-        />
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" alt="" />
+          <div class="tool-tip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="" />
+          <div class="tool-tip">YouTube Apps</div>
+        </div>
+
+        <div class="notification-icon-container">
+          <img class="notification-icon" src="icons/notifications.svg" alt="" />
+          <div class="notification-count">3</div>
+          <div class="tool-tip">Notification</div>
+        </div>
+        <div class="current-user-picture-container">
+          <img
+            class="current-user-picture"
+            src="channel-pictures/my-channel.jpeg"
+            alt=""
+          />
+          <div class="tool-tip">George</div>
+        </div>
       </div>
     </div>
 
-    <div class="sidebar">sidebar</div>
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="" />
+        <div>L ibrary</div>
+      </div>
+    </div>
 
     <div class="video-grid">
       <div class="video-preview">
@@ -57,6 +98,7 @@
             src="thumbnails/thumbnail-1.webp"
             alt="Image of MKBHD"
           />
+          <div class="video-time">14:20</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-pic-ctn">
@@ -81,6 +123,7 @@
       <div class="video-preview">
         <div class="video-thumbail-ctn">
           <img class="video-thumbail" src="thumbnails/thumbnail-2.webp" />
+          <div class="video-time">8:22</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-pic-ctn">
@@ -104,6 +147,7 @@
             src="thumbnails/thumbnail-3.webp"
             alt="Image of MKBHD"
           />
+          <div class="video-time">9:13</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-pic-ctn">
@@ -133,6 +177,7 @@
             src="thumbnails/thumbnail-4.webp"
             alt="Image of MKBHD"
           />
+          <div class="video-time">22:09</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-pic-ctn">
@@ -162,6 +207,7 @@
             src="thumbnails/thumbnail-5.webp"
             alt="Image of MKBHD"
           />
+          <div class="video-time">11:17</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-pic-ctn">
@@ -191,6 +237,7 @@
             src="thumbnails/thumbnail-6.webp"
             alt="Image of MKBHD"
           />
+          <div class="video-time">19:59</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-pic-ctn">
@@ -220,6 +267,7 @@
             src="thumbnails/thumbnail-1.webp"
             alt="Image of MKBHD"
           />
+          <div class="video-time">10:13</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-pic-ctn">
@@ -249,6 +297,7 @@
             src="thumbnails/thumbnail-1.webp"
             alt="Image of MKBHD"
           />
+          <div class="video-time">7:12</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-pic-ctn">
@@ -278,6 +327,7 @@
             src="thumbnails/thumbnail-1.webp"
             alt="Image of MKBHD"
           />
+          <div class="video-time">13:17</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-pic-ctn">
@@ -307,6 +357,7 @@
             src="thumbnails/thumbnail-1.webp"
             alt="Image of MKBHD"
           />
+          <div class="video-time">7:53</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-pic-ctn">
