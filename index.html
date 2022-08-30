@@ -11,54 +11,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      p {
-        font-family: Roboto, Arial;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      .search-bar {
-        display: block;
-      }
-      .video-thumbail {
-        width: 100%;
-      }
-      .video-title {
-        margin-top: 0;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        margin-bottom: 12px;
-      }
-      .video-info-grid {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-      }
-      .channel-pic {
-        width: 40px;
-        border-radius: 50px;
-      }
-      .video-thumbail-ctn {
-        margin-bottom: 12px;
-      }
-      .video-channel,
-      .video-stats {
-        font-size: 12px;
-        color: rgb(96, 96, 96);
-      }
-      .video-channel {
-        margin-bottom: 4px;
-      }
-      .video-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 40px;
-      }
-    </style>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="video.css" />
   </head>
   <body>
-    <input class="search-bar" placeholder="Search" type="text" name="" id="" />
+    <div class="header">
+      <div class="left-section">Left section</div>
+      <div class="middle-section">
+        <input class="search-bar" placeholder="Search" type="text" />
+      </div>
+      <div class="right-section">Right section</div>
+    </div>
+
     <div class="video-grid">
       <div class="video-preview">
         <div class="video-thumbail-ctn">
